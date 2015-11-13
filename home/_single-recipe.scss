@@ -1,0 +1,94 @@
+
+
+.amp-recipe {
+  padding: 0!important; // Remove this style. Add it globally
+
+  h1 {
+    background: white;
+    padding: 12px 15px;
+    font-size: 46px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    margin: 30px 0 20px;
+  }
+
+  p, li { font-weight: 400; }
+
+  p { font-size: 16px; }
+
+  .emphasised {
+    padding: 12px 15px;
+    max-width: 720px;
+    font-size: 25px;
+    font-weight: 400;
+    background: white;
+    line-height: 1.4;
+  }
+
+  .ingredients,
+  .ingredients p {
+    font-size: 20px;
+  }
+
+  .amp-disc li {
+    margin-bottom: 8px;
+  }
+
+  .img-circle {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nutrient-tags {
+    margin: 40px 0 80px;
+
+    .nutrient {
+      display: inline-block;
+      background: #313131;
+      font-size: 20px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 5px 10px;
+      color: white;
+    }
+    .light {
+      background: white;
+      color: black;
+    }
+  }
+
+
+}
+
+.amp-banana-hemp {
+  padding: 0;
+
+  .container-fluid {
+    background: url('./assets/recipes/diagonal-white-bg.svg') 0 300px/100% no-repeat,
+                url('./assets/recipes/bananas.jpg') 0 -60px/100% no-repeat;
+    padding-top: 100px;
+  }
+  .recipe-info {
+    margin-bottom: 200px;
+
+    @media #{$md} {
+      margin-bottom: 30px;
+    }
+  }
+
+  .recipe-content {
+    padding-left: 15px;
+  }
+
+}
+
+@media #{$xs} {
+
+  .amp-banana-hemp .recipe-info {
+      margin-bottom: 10px;
+      margin-top: 50px;
+      padding-top: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+include ../shared/header/index.jade
+include ../shared/footer/index.jade
+
+doctype html
+html(lang="en", ng-app="ampHome")
+  head
+    title Amplify
+    link(rel='stylesheet',type='text/css',href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,300,300italic,600italic,700,700italic')
+    each style in css
+      link(href="#{asset_path}/#{style}", rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    script(type="text/javascript")
+  body(ng-class="stateName", class=bodyClass)
+    +header
+    block content
+    script.
+      conf = JSON.parse(decodeURIComponent("#{encodeURIComponent(JSON.stringify(conf))}"));
+    each script in js
+      script(src="#{asset_path}/#{script}")
+    +footer
+      block footerblock

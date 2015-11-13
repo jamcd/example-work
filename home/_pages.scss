@@ -1,0 +1,379 @@
+
+$primary-color: #a78e5e;
+$secondary-color: #191919;
+
+// Extra small devices (portrait phones, less than 34em)
+$xs: "(max-width: 33.9em)";
+
+// Small devices (landscape phones, less than 48em)
+$sm: "(max-width: 47.9em)";
+
+// Medium devices (tablets, less than 62em)
+$md: "(max-width: 61.9em)";
+
+// Large devices (desktops, less than 75em)
+$lg: "(max-width: 74.9em)";
+
+// CUSTOM MEDIA QUERY
+// Large-medium devices (desktops, less than 75em)
+$lm: "(max-width: 84.9em)";
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+
+@mixin highlight($color) {
+  & .highlight {
+    color: $color;
+  }
+}
+
+
+//----------------------
+// GENERAL STYLES
+//----------------------
+
+/* Clearing fixed menu */
+
+// fix URLs/links of pages
+// review notes
+
+
+
+/* SECTION WRAPPER FOR MAX-WIDTH AND BACKGROUND IMAGES */
+// .amp-wrapper added to code to prevent default styling of .amp-section changing
+
+.amp-section,
+.amp-section > .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.amp-section > .container-fluid {
+  max-width: 1300px;
+}
+
+// ------------------------------
+
+
+
+
+
+body section:first-of-type {
+  margin-top: 76px;
+  padding-top: 0;
+}
+
+.page-title {
+  padding: 260px 0 220px;
+  @media #{$sm} {
+    padding: 90px 0 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: black;
+
+    span {
+      color: #ae8f4d;
+    }
+  }
+}
+
+.heading-text {
+  max-width: 690px;
+  margin: 0 auto;
+
+  h2 {
+    padding: 75px 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+    font-size: 35px;
+    font-weight: 300;
+
+    &.emphasised {
+      border:0;
+      font-size:45px;
+      padding-bottom: 20px;
+    }
+
+    span {
+      color: black;
+    }
+
+  }
+}
+
+.dark-theme {
+  color:white;
+  h1, h2 {
+    color:white;
+    @include highlight($primary-color);
+  }
+}
+
+.amp-disc {
+  padding-left: 10px;
+  list-style: none;
+
+  li {
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    &:before {
+      content: ".";
+      font-size: 25px;
+      line-height: 10px;
+      display: block;
+      float: left;
+      margin-left: -30px;
+    }
+  }
+}
+
+.amp-divider {
+  border-top: 1px solid $primary-color;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.blog-posts img,
+.blog-post-image {
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  // Change color when tag buttons work
+  border-color: $primary-color;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  max-width: 100%;
+  height: auto;
+  margin-bottom : 5px;
+}
+
+.blog-feed {
+
+  [class*="col-"] {
+    margin-bottom: 35px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
+
+
+//----------------------
+// BOOTSTRAP CAROUSEL
+//----------------------
+
+.carousel-caption {
+  top: 40%;
+  width: 80%;
+  left: 10%;
+  h1 {
+    background: $primary-color;
+    padding: 30px 70px 40px;
+    text-shadow: none;
+    color: white;
+    @include highlight(black);
+  }
+}
+
+.carousel-control {
+  opacity: 1;
+
+  .icon-next,
+  .icon-prev {
+    margin-top: -45px;
+    width: 60px;
+    height: 60px;
+    &:before {
+      display: block;
+      content: '';
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .icon-prev {
+    margin-left: 0;
+    &:before {
+      background: url('./assets/slider-prev-arrow-gold.svg') 0 0/100%;
+    }
+  }
+  .icon-next {
+    margin-right: 0;
+    &:before {
+      margin-right: 25px;
+      background: url('./assets/slider-next-arrow.svg') 0 0/100%;
+    }
+  }
+}
+
+.carousel .carousel-indicators {
+  li {
+    width: 16px;
+    height: 16px;
+    margin: 0 7px;
+    border: 2px solid white;
+    background: white;
+  }
+  .active {
+    background-color: $primary-color;
+  }
+}
+
+
+
+
+.carousel-item {
+
+  img {
+    -webkit-clip-path: polygon(28% 0%, 0% 74%, 0% 100%, 82% 100%, 100% 50%, 100% 0%);
+    clip-path: polygon(28% 0%, 0% 74%, 0% 100%, 82% 100%, 100% 50%, 100% 0%);
+  }
+
+  h1 {
+    -webkit-clip-path: polygon(67px 0%, 0% 100%, 94% 100%, 100% 0%);
+    clip-path: polygon(67px 0%, 0% 100%, 94% 100%, 100% 0%);
+  }
+
+  .carousel-caption {
+    left: 8%;
+    width: 85%;
+
+    &.text-slide { top: 10%; }
+
+    .text-slide-content {
+      left: 30%;
+      max-width: 60%;
+      text-align: left;
+      margin-left: 30%;
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        text-shadow: none;
+        margin-bottom: 18px;
+      }
+      .emphasised {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+      }
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    @media #{$lg} {
+      width: 80%;
+      left: 7.5%;
+    }
+
+    @media #{$md} {
+      width: 75%;
+      left: 5%;
+    }
+
+  }
+
+}
+
+
+
+
+// #charitycarousel, #whycarousel {
+//
+//   .carousel-inner{
+//     height: 590px;
+//   }
+//
+//   .carousel-inner>.carousel-item {
+//     height: 100%;
+//   }
+//
+//   .carousel-inner>.carousel-item img {
+//     // Centering image vertically
+//     position: relative;
+//     top: 50%;
+//     transform: translate3d(0, -50%, 0);
+//     min-width: 100%;
+//   }
+//
+// }
+
+// TRYING TO GET CAROUSEL TO ONLY PARTIALLY SLIDE
+// NOT WORKING YET
+//
+// #charitycarousel {
+//
+//   .carousel-inner > .carousel-item,
+//   .carousel-inner > .carousel-item.active.left {
+//     display:block;
+//     left: -90%!important;
+//     transition: 0.6s ease-in-out;
+//       transform: translate3d(-90%, -50%, 0);
+//   }
+//
+//   .carousel-inner > .carousel-item:nth-of-type(2) {
+//     width: 90%;
+//   }
+//
+//   .carousel-inner > .carousel-item.active,
+//   .carousel-inner > .carousel-item.next {
+//     left: 0!important;
+//   }
+//
+//   .carousel-inner > .carousel-item {
+//       transform: translate3d(0, -50%, 0)!important;
+//   }
+//
+// }
+
+
+
+//----------------------
+// PAGE SPECIFIC STYLES
+//----------------------
+
+@import 'why-page';
+@import 'business-page';
+@import 'charities-page';
+@import 'news-page';
+@import 'vision-page';
+@import 'supplements-page';
+@import 'single-recipe';
+@import 'single-article';
+
+/* Legal Page */
+.amp-section.amp-legal {
+  font-weight: 400;
+  padding-top: 80px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  h2, p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-weight: 700;
+    line-height: 3;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+}

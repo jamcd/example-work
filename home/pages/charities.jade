@@ -1,0 +1,47 @@
+extends ../template.jade
+
+block content
+  section
+    .fluid-container
+      .row.row-xs-center.text-center
+        .col-xs-12
+        
+          #charitycarousel.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#charitycarousel', data-slide-to='0')
+              li(data-target='#charitycarousel', data-slide-to='1')
+            .carousel-inner(role='listbox')
+              .carousel-item.active
+                img.img-responsive.center-block(src="#{asset_path}/home/assets/charity/charity-slider.jpg", width="1920", height="1280", alt="Charity slide one")
+                .carousel-caption
+                  h1 Amplify charity partners
+              .carousel-item
+                .carousel-caption.text-slide
+                  .text-slide-content
+                    p For Amplify giving back and supporting key health focussed charities is within our DNA. We have done it from the start ands will continue to the end.
+                    p It is very much a two-way relationship, from sharing anonymous data and trends to our charity partners that could potentially help charities make decisions on spending, types of services and locations to focus on, to making sure every user that subscribes to any of our services, a portion of this goes to a charity of their choice.
+            a.left.carousel-control(href, data-target='#charitycarousel', role='button', data-slide='prev')
+              span.icon-prev(aria-hidden='true')
+              span.sr-only Previous
+            a.right.carousel-control(href, data-target='#charitycarousel', role='button', data-slide='next')
+              span.icon-next(aria-hidden='true')
+              span.sr-only Next
+              
+    section.amp-section.supported-charities
+      .container
+        .row.row-xs-center.text-center
+          .col-xs-12
+            h2 The charities we are currently supporting are
+          .col-sm-6.col-md-3
+            img.img-responsive.center-block(src="#{asset_path}/home/assets/charity/youth-sport-trust.jpg", width="210", height="104", alt="Youth Sport Trust")
+          .col-sm-6.col-md-3
+            img.img-responsive.center-block(src="#{asset_path}/home/assets/charity/anorexia-bulimia-care.jpg", width="133", height="126", alt="Anorexia Bulimia Care")
+          .col-sm-6.col-md-3
+            img.img-responsive.center-block(src="#{asset_path}/home/assets/charity/diabetes-uk.jpg", width="212", height="39", alt="Diabetes UK")
+          .col-sm-6.col-md-3
+            img.img-responsive.center-block(src="#{asset_path}/home/assets/charity/alzheimers-society.jpg", width="214", height="69", alt="Alzheimers Society")
+              
+              
+  // LIVE RELOAD
+  // REMOVE ON LAUNCH
+  script(src="http://localhost:35729/livereload.js")

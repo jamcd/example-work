@@ -1,0 +1,186 @@
+include ../template.jade
+include ../../shared/header/index.jade
+include ../../shared/footer/index.jade
+
++template('amp-why-page')
+  +header
+    include ../nav.jade
+    
+  section.amp-section.amp-why-header
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12.col-md-6
+        .col-xs-12.col-md-6.page-title
+          h1 Why 
+            span.highlight Amplify
+            | ?
+        
+        .col-xs-12
+          .heading-text
+            h2 How to plan and 
+              span.highlight effectively 
+              | measure fitness training that 
+              span.highlight gets results
+              | ?
+            h2 Which 
+              span.highlight supplements 
+              | to select?
+            
+            h2 How to choose the 
+              span.highlight right diet
+              | ?
+            h2.emphasised Amplify has the 
+              span.highlight answers
+    
+  section.amp-section.amp-cent-plat.dark-theme
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          img.img-responsive.center-block.amp-logo(src="#{asset_path}/home/assets/round-logo-gradient.svg",width="215", height="215")
+          h1 Amplify is your 
+            span.highlight central platform
+          h2 One-stop health and wellbeing solution
+              
+  section.amp-section.amp-exp.dark-theme
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          h1 The Amplify 
+            span.highlight Experience
+          div.more
+            img.img-responsive.center-block(src="#{asset_path}/home/assets/gold-circle-plus.svg",width="25", height="25")
+            | KNOW MORE HERE
+            
+  section.amp-section.amp-how
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12          
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/why/track.png",width="240",height="232")
+          div.line-seperator
+        .col-xs-12
+          h2
+            span.highlight 01.
+            | Track
+            small Your personal details and data are absorbed;
+        .col-xs-12          
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/why/analyses.svg",width="240",height="232")
+          div.line-seperator
+          h2
+            span.highlight 02.
+            | Analyses
+            small Then Amplify measures, analyses based on your body’s needs
+        .col-xs-12          
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/why/delivery.png",width="252",height="231")
+          div.line-seperator
+          h2
+            span.highlight 03.
+            | Delivery
+            small Delivers you products and services that will help and encourage you to reach your goals.
+  
+  section.amp-section.amp-partners
+    .fluid-container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          h1 Device Partners
+          
+      .row.row-xs-center.text-center.featured-partners
+        .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+          .row.row-xs-center.text-center
+            .col-xs-4
+              img(src="#{asset_path}/home/assets/partners/strava.png", width="40", height="40", alt="Strava")
+              | Strava
+            .col-xs-4
+              img(src="#{asset_path}/home/assets/partners/runkeeper.png", width="40", height="40", alt="Runkeeper")
+              | Runkeeper
+            .col-xs-4
+              img(src="#{asset_path}/home/assets/partners/fitbit.png", width="40", height="40", alt="Fitbit")
+              | Fitbit
+          
+      .row.row-xs-center.coming-soon
+        .col-xs-12.col-lg-10.col-lg-offset-1.col-xl-8.col-xl-offset-2
+          .row.row-xs-center
+            .col-xs-12.col-lg-3
+              h2 Coming soon
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/training-peaks.png", width="40", height="40", alt="Training Peaks")
+              | Training Peaks
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/garmin.png", width="40", height="40", alt="Garmin")
+              | Garmin
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/jawbone.png", width="40", height="40", alt="Jawbone")
+              | Jawbone
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/my-fitness-pal.png", width="40", height="40", alt="My Fitness Pal")
+              | My Fitness Pal
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/endemondo.png", width="40", height="40", alt="Endemondo")
+              | Endemondo
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/apple-watch.png", width="40", height="40", alt="Apple Watch")
+              | Apple Watch
+            .col-sm-4.col-md-3
+              img(src="#{asset_path}/home/assets/partners/misfit.png", width="40", height="40", alt="Misfit")
+              | Misfit
+            
+  section.amp-section.amp-supplements
+    .fluid-container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+            .carousel-inner(role='listbox')
+              .carousel-item.active
+                img(src="#{asset_path}/home/assets/why/supplements.jpg", width="1300", height="782", alt="Supplements slide one")
+                .carousel-caption
+                  h1 Why a healthy diet 
+                    span.highlight needs supplements
+                    | ?
+              .carousel-item
+                img(src="#{asset_path}/home/assets/why/supplements-2.jpg", width="1300", height="782", alt="Supplements slide two")
+                .carousel-caption
+                  h1 Why a healthy diet 
+                    span.highlight needs supplements
+                    | ?
+            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+              span.icon-prev(aria-hidden='true')
+              span.sr-only Previous
+            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+              span.icon-next(aria-hidden='true')
+              span.sr-only Next
+
+  
+
+  section.amp-section.amp-kick-off.dark-theme
+    .container
+      .row.row-xs-bottom
+        .col-sm-6.hidden-sm-down
+          img.img-responsive.center-block.product-image(src="#{asset_path}/home/assets/why/kick-off-product.png", width="352", height="527", alt="Kick Off Product")
+        .col-xs-12.col-md-6
+          img.img-responsive.center-block.circle-logo(src="#{asset_path}/home/assets/round-logo-gradient.svg", width="150", height="150", alt="Amplify Logo")
+          h1 To kick-off 
+            span.highlight Amplify 
+            | has focussed on vitamins, minerals and sports supplements.
+          p We understand you have a unique genetic makeup by first looking at your DNA analysis We are able to measure
+          p We understand the role that your peer group can play and get them involved, too. And finally, we can help you define and reach your goals with our team of industry experts in health, sport and nutrition.
+ 
+        
+  section.amp-section.amp-footer-signup
+    .container
+      .row.row-xs-center.text-center
+        .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-sm-12
+          p.headline Let us keep you posted on future developments by registering with us now.
+          button.btn.btn-gold.btn-lg Sign Up
+          p.headline-2 Register now to benefit tomorrow
+        
+        
+  // LIVE RELOAD
+  // REMOVE ON LAUNCH
+  script(src="http://localhost:35729/livereload.js")
+
+  
+  +footer

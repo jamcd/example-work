@@ -1,0 +1,126 @@
+
+
+//----------------------
+// SINGLE ARTICLE
+//----------------------
+
+
+.amp-social-share a {
+  padding: 10px;
+
+  &:first-of-type {
+    margin-left: -10px;
+  }
+
+}
+
+.amp-article {
+
+  .article-header {
+    background: #f1f1f1;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+
+    .parent-title {
+      width: 160px;
+      padding-right: 50px;
+      p {
+        font-size: 43px;
+        line-height: 1;
+      }
+    }
+    .tags-placeholder,
+    .parent-title {
+      float:left;
+    }
+    p {
+      color: black;
+    }
+  }
+
+  padding: 0!important; // Remove this style. Add it globally
+
+  .article-content-col { padding-right: 25px; }
+
+  .amp-post-categories {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .amp-social-share { margin-bottom: 30px; }
+
+  .article-content {
+
+    h1, h2, p {
+      color: black;
+    }
+
+    h2, p {
+      font-weight: 400;
+    }
+
+    .amp-post-author {
+      font-weight: 700;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .amp-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: black;
+  }
+
+  .amp-post-author,
+  .amp-post-date {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .sidebar {
+    padding: 25px;
+    background: #f1f1f1;
+  }
+
+  .amp-post {
+    margin-bottom: 70px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width:100%;
+    }
+  }
+}
+
+
+@media #{$sm} {
+
+  .amp-social-share a {
+    padding: 20px;
+    font-size: 20px;
+
+    &:first-of-type {
+      margin-left: -10px;
+    }
+  }
+
+  .amp-article .article-content-col {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+
+}

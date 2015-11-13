@@ -1,0 +1,82 @@
+extends ../template.jade
+
+block content
+  section.amp-section.amp-article
+  
+    .container-fluid.article-header
+      .container
+        .row.row-xs-center
+          .col-xs-12.col-sm-8.article-content-col
+            .parent-title
+              p News
+            .tags-placeholder
+              p
+                i Tags Placeholder
+          .col-xs-12.col-sm-4
+            .search
+              p
+                i Search Placeholder
+          
+    .container-fluid
+      .container
+        .row
+          .col-sm-12.col-md-8.article-content-col
+            .article-content
+              p.amp-post-categories Health
+              p.amp-post-date september 17, 2015
+              h1.amp-post-headline.amp-divider Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo
+              p.amp-post-author BY AMPLIFY TEAM
+              .amp-social-share
+                a(href="#")
+                  i.fa.fa-facebook
+                a(href="#")
+                  i.fa.fa-twitter
+                a(href="#")
+                  i.fa.fa-google-plus
+                a(href="#")
+                  i.fa.fa-pinterest
+                a(href="#")
+                  i.fa.fa-linkedin
+                  
+              img.img-responsive.center-block.blog-post-image(src="#{asset_path}/home/assets/news/man-doing-pushups.jpg",width="749", height="300")
+              p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            
+            .row
+              .col-xs-12
+                h2.amp-divider.amp-subtitle RELATED POSTS
+                
+            .row.blog-posts.blog-feed
+              .col-xs-12.col-sm-6
+                img.img-responsive.post-image(src="#{asset_path}/home/assets/news/hanging-from-a-mountain-peak.jpg",width="361", height="172")
+                .post-date 15 Sept 2015
+                h3.post-headline Headline goes here
+                p.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sodales ex, eget facilisis risus cursus sed.
+              
+              .col-xs-12.col-sm-6
+                img.img-responsive.post-image(src="#{asset_path}/home/assets/news/woman-preparing-to-race.jpg",width="361", height="172")
+                .post-date 15 Sept 2015
+                h3.post-headline Headline goes here
+                p.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sodales ex, eget facilisis risus cursus sed.            
+            
+          .col-sm-12.col-md-4.blog-posts.sidebar
+            h2.amp-subtitle POPULAR POSTS
+            
+            .amp-post
+              img.img-responsive.post-image(src="#{asset_path}/home/assets/news/woman-running-into-the-sunrise.jpg",width="361", height="172")
+              .post-date 15 Sept 2015
+              h3.post-headline Headline goes here
+              p.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sodales ex, eget facilisis risus cursus sed.
+            
+            .amp-post
+              img.img-responsive.post-image(src="#{asset_path}/home/assets/news/close-up-of-chocolate-and-cocoa.jpg",width="361", height="172")
+              .post-date 15 Sept 2015
+              h3.post-headline Headline goes here
+              p.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sodales ex, eget facilisis risus cursus sed.
+            
+            .amp-post
+              img.img-responsive.post-image(src="#{asset_path}/home/assets/news/man-in-swimming-race.jpg",width="361", height="172")
+              .post-date 15 Sept 2015
+              h3.post-headline Headline goes here
+              p.post-excerpt Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales sodales ex, eget facilisis risus cursus sed.
+          

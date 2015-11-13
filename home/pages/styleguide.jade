@@ -1,0 +1,94 @@
+include ../template.jade
+include ../../shared/header/index.jade
+include ../../shared/footer/index.jade
+
++template
+  +header
+    include ../nav.jade
+  section.content
+    .container.container-white(style="padding:3em")
+      .row
+        .col-xs-12
+          h1 Heading 1
+          h2 Heading 2
+          h3 Heading 3
+          h4 Heading 4
+          h5 Heading 5
+          p 
+            | This is some basic text with a 
+            a(href="") Hyperlink
+            |  in the middle.
+            | Paragraph, Regular, 16px, 23px, leading #555555 Lorem ipsum dolor sit amet, consectetur
+            | adipiscing elit. Fusce sed leo. Maecenas ultrices lorem sit amet
+            | diam. Aliquam sollicitudin tristique nulla. Duis libero diam, condimentum et,
+            | condimentum in, congue eu, tellus. Phasellus eu elit at nisi ultricies lobortis.
+            | Suspendisse porta commodo leo.
+          
+      .row
+        .col-xs-12.col-md-4
+          .row
+            .col-xs-12
+              button.btn.btn-white.btn-sm Small White
+            .col-xs-12
+              button.btn.btn-black.btn-sm Small Black
+            .col-xs-12
+              button.btn.btn-dark.btn-sm Small Dark
+            .col-xs-12
+              button.btn.btn-grey.btn-sm Small Grey
+            .col-xs-12
+              button.btn.btn-gold.btn-sm Small Gold
+            .col-xs-12
+              button.btn.btn-green.btn-sm Small Green
+            .col-xs-12
+              button.btn.btn-red.btn-sm Small Red
+        .col-xs-12.col-md-4
+          .row
+            .col-xs-12
+              button.btn.btn-white White
+            .col-xs-12
+              button.btn.btn-black Black
+            .col-xs-12
+              button.btn.btn-dark Dark
+            .col-xs-12
+              button.btn.btn-grey Grey
+            .col-xs-12
+              button.btn.btn-gold Gold
+            .col-xs-12
+              button.btn.btn-green Green
+            .col-xs-12
+              button.btn.btn-red Red
+        .col-xs-12.col-md-4
+          .row
+            .col-xs-12
+              button.btn.btn-white.btn-lg White Large
+            .col-xs-12
+              button.btn.btn-black.btn-lg Black Large
+            .col-xs-12
+              button.btn.btn-dark.btn-lg Dark Large
+            .col-xs-12
+              button.btn.btn-grey.btn-lg Grey Large
+            .col-xs-12
+              button.btn.btn-gold.btn-lg Gold Large
+            .col-xs-12
+              button.btn.btn-green.btn-lg Green Large
+            .col-xs-12
+              button.btn.btn-red.btn-lg Red Large
+      .row
+        .col-xs-12
+          .checkbox
+            .checkbox-inline
+              input#cb1(type="checkbox")
+              label(for="cb1") Default
+            .checkbox-inline  
+              input#cb2(type="checkbox", checked)
+              label(for="cb2") Checked
+          .radio
+            .radio-inline
+              input#rd1(type="radio", name="foo")
+              label(for="rd1") Default
+            .radio-inline  
+              input#rd2(type="radio", checked, name="foo")
+              label(for="rd2") Checked
+
+      
+  +footer

@@ -1,0 +1,14 @@
+include ../template.jade
+include ../../shared/header/index.jade
+include ../../shared/footer/index.jade
+
++template
+  +header
+    include ../nav.jade
+    a(href="/dashboard", target="_self")
+      img.img-circle(width="40", src="#{asset_path}/home/assets/profile.png")
+  section.content
+    .container.container-white
+      a(href="/dashboard")
+        img(src="#{asset_path}/home/assets/tracker.png", width="645", style="margin-bottom:50px; margin-left:5px; margin-top:2px")
+  +footer

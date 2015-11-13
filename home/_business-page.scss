@@ -1,0 +1,374 @@
+
+//----------------------
+// BUSINESS PAGE
+//----------------------
+
+
+
+//----------------------
+// BENEFITS SECTION
+//----------------------
+
+.amp-col-6 {
+  width: 50%;
+  .first {
+  }
+}
+
+.amp-benefits {
+  background: black;
+  padding: 0 2em;
+  overflow: hidden;
+}
+
+.benefits-container {
+
+  .row-xs-center:first-of-type > div {
+    padding-top:200px;
+    @media #{$sm} {
+      padding: 0;
+    }
+  }
+
+  .row-xs-center:last-of-type > div {
+    padding-bottom:200px;
+    @media #{$sm} {
+      padding: 0;
+    }
+  }
+
+  .col-md-6 {
+    padding: 100px 0;
+    box-shadow: inset 1px 0 0 0 $primary-color;
+    &:nth-of-type(2n-1) {
+      box-shadow: 1px 0 0 0 $primary-color;
+    }
+    @media #{$sm} {
+      box-shadow: none;
+      .amp-section.amp-benefits & {
+        padding: 30px 0.9375rem;
+      }
+
+      &:nth-of-type(2n-1) {
+        box-shadow: none;
+      }
+    }
+  }
+
+
+
+
+  .icon-left .icon,
+  .icon-right .icon {
+    min-height:400px;
+
+    &:after {
+      display: block;
+      position: relative;
+      float: right;
+      content: '';
+      width: 50%;
+      border-top: 2px dashed $primary-color;
+      margin-top: -107.5px;
+    }
+  }
+
+  .icon-right .icon:after {
+    float: left;
+    @media #{$sm} {
+      width: 100%;
+      right: 50%;
+    }
+  }
+
+  .icon-left .icon:after {
+    @media #{$sm} {
+      width: 100%;
+      left: 50%;
+    }
+  }
+
+  .benefits-icon {
+
+    img {
+      position: relative;
+      z-index: 10;
+    }
+
+  }
+
+  @media #{$lg} and (min-width: 47.9em) {
+    .icon-left .benefits-info {
+      float: right;
+    }
+
+    .icon-right .benefits-info {
+      float: left;
+    }
+  }
+
+  .benefits-info {
+    max-width: 430px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: 300;
+
+    .benefits-number {
+      display: inline-block;
+      width: 50px;
+      font-size: 48px;
+      line-height: 1.1;
+      color: $primary-color;
+    }
+    .benefits-text {
+      display: inline-block;
+      width: calc(100% - 50px);
+
+      h2 {
+        font-size: 48px;
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+
+  }
+
+
+}
+
+//----------------------
+// HEADER SECTION
+//----------------------
+
+.amp-business-header {
+
+  @include highlight($primary-color);
+
+  .container-fluid {
+    background: white url("./assets/business/business-header.jpg") no-repeat;
+  }
+
+  .seperator {
+    border-top: 1px solid $primary-color;
+  }
+
+  header.header-default {
+    margin-bottom: 0;
+  }
+
+  .page-title {
+    text-align: right;
+    font-size: 55px;
+    padding: 275px 0 60px;
+  }
+
+  .heading-text {
+    max-width: 900px;
+    h2 {
+      color: #494949;
+      border:0;
+    }
+  }
+
+
+}
+
+
+//----------------------
+// BUSINESS SECTION
+//----------------------
+
+.amp-for-business {
+  padding-top: 0;
+  background: black;
+
+  .container-fluid {
+    background: url("./assets/business/business-white-angle-bg.png") 100% 1000px/100% no-repeat, url("./assets/business/business-image-bg.jpg") 0% 0%/100% no-repeat;
+    padding-top: 520px;
+    font-weight: 300;
+    text-align: right;
+  }
+
+  .business-info {
+    padding-top: 150px;
+  }
+
+  .business-btns {
+    margin-top: 50px;
+    
+    a {
+      display: flex;
+      float: left;
+      padding: 30px;
+      height: 140px;
+      width: 15.6%;
+      text-align: center;
+      font-weight: 200;
+      border-right: 1px solid #fde2a6;
+      color: black;
+      text-transform: uppercase;
+      align-items: center;
+      -webkit-transform: skew(-30deg);
+      -moz-transform: skew(-30deg);
+      -o-transform: skew(-30deg);
+
+      &:hover {
+        background: black;
+        color: $primary-color;
+      }
+
+      // Background gradient
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1c482+0,b59654+100 */
+      background: #e1c482; /* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxYzQ4MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNTk2NTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(top,  #e1c482 0%, #b59654 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1c482), color-stop(100%,#b59654)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #e1c482 0%,#b59654 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #e1c482 0%,#b59654 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #e1c482 0%,#b59654 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #e1c482 0%,#b59654 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1c482', endColorstr='#b59654',GradientType=0 ); /* IE6-8 */
+
+    }
+    span {
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(30deg);
+      -o-transform: skew(30deg);
+    }
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 45px;
+    color: $primary-color;
+  }
+
+  .dark-theme {
+    padding-bottom: 100px;
+  }
+  .emphasised {
+    font-size: 35px;
+    line-height: 1.3;
+  }
+}
+
+//----------------------
+// HEADER SECTION
+//----------------------
+
+.amp-invites {
+  background: black;
+  padding-bottom: 90px;
+
+  .emphasised {
+    font-size:30px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    .highlight {
+      color: $primary-color;
+    }
+  }
+  //
+  // .btn-lg {
+  //   font-size: 16px;
+  //   font-weight: 300;
+  // }
+
+}
+
+
+@media #{$lg} {
+
+  .amp-business-header {
+    background-position: top right;
+  }
+
+}
+
+@media #{$md} and (min-width:47.9em) {
+
+  .benefits-container {
+
+    .benefits-info {
+      max-width: 300px;
+
+      .benefits-number,
+      .benefits-text {
+        width: 100%;
+      }
+
+      .benefits-number,
+      .benefits-text h2 {
+        font-size: 35px;
+      }
+
+      .benefits-number {
+        margin: 0 0 10px 40px;
+      }
+    }
+  }
+
+  .page-title h1 {
+    font-size: 55px;
+  }
+}
+
+@media #{$sm} {
+
+  .page-title h1 {
+    font-size: 50px;
+  }
+
+  .amp-business-header {
+    background-position: 100% -95px;
+    background-size: 190%;
+
+    .page-title {
+      padding: 155px 0 20px;
+    }
+
+  }
+
+  .heading-text h2 {
+    font-size: 30px;
+    padding: 50px 0;
+
+    .emphasised {
+      font-size: 35px;
+    }
+
+  }
+
+  .benefits-container {
+    padding: 100px 0;
+
+    .benefits-info .benefits-number,
+    .benefits-info .benefits-text h2 {
+      font-size: 35px;
+    }
+
+    .icon-left .icon,
+    .icon-right .icon {
+      min-height: 0;
+    }
+  }
+
+  .icon-right .icon:after {
+    width: 100%;
+    right: 50%;
+  }
+
+  .icon-left .icon:after {
+    width: 100%;
+    left: 50%;
+  }
+
+}

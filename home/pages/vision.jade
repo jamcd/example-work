@@ -1,0 +1,105 @@
+extends ../template.jade
+
+block content
+  section.amp-section.amp-vision-header.dark-theme
+    .container
+      .row
+        .col-xs-12.col-lg-5.col-lg-offset-7.col-xl-6.col-xl-offset-6.page-title
+          h1 The Amplify Vision
+          p.emphasised Amplify aims to make Britain healthier and ensure everyone gets the most out of each and every moment of their life.
+          p There are no barriers: age, fitness level, ethnic group, able-bodied or disabled.
+          p Amplify is will help you make the changes today that 
+            span.highlight will transform tomorrow
+            | .
+            
+  section.amp-section.meet-the-experts
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12.full-width-title
+          h1 Meet the experts
+    .container.profiles
+      .col-xs-12
+      
+        .card-block.amp-highlight-box
+          .row
+            .col-sm-12.col-md-4
+              img.img-responsive.post-image.pull-left(src="#{asset_path}/home/assets/vision/fiona.png",width="106", height="106")
+              .profile-info
+                h2 Fiona Bugler
+                p Job title
+            .col-sm-12.col-md-8
+              .row
+                .col-xs-9.col-sm-10
+                  .collapse#profile-fiona
+                    p.profile-content I’m a runner and owner of a small content agency and I’m a qualified running coach and personal trainer.
+                .col-xs-3.col-sm-2
+                  a(class="pull-right collapse-btn" data-toggle="collapse" href="#profile-fiona" aria-expanded="false" aria-controls="profile-fiona")
+                    img.img-responsive.post-image.pull-right(src="#{asset_path}/home/assets/white-circle-plus.svg",width="56", height="56")
+                    
+        .card-block.amp-highlight-box
+          .row
+            .col-sm-12.col-md-4
+              img.img-responsive.post-image.pull-left(src="#{asset_path}/home/assets/vision/kim.png",width="106", height="106")
+              .profile-info
+                h2.pull-left Kim Ingleby
+                p.job-title Job title
+            .col-sm-12.col-md-8
+              .row
+                .col-xs-10
+                  .collapse#profile-kim
+                    p.profile-content I give people the tools, coaching and commitment to achieve their dreams with courage and self-belief in fitness, well-being and life. I am a keynote motivational speaker, fitness and travel writer, athlete, model, brand ambassador and charity fundraiser.
+                .col-xs-2
+                  a(class="pull-right collapse-btn" data-toggle="collapse" href="#profile-kim" aria-expanded="false" aria-controls="profile-kim")
+                    img.img-responsive.post-image.pull-right(src="#{asset_path}/home/assets/white-circle-plus.svg",width="56", height="56")
+                    
+        .card-block.amp-highlight-box
+          .row
+            .col-sm-12.col-md-4
+              img.img-responsive.post-image.pull-left(src="#{asset_path}/home/assets/vision/lucy-ann.png",width="106", height="106")
+              .profile-info
+                h2.pull-left Lucy-Ann Prideaux
+                p.job-title Job title
+            .col-sm-12.col-md-8
+              .row
+                .col-xs-10
+                  .collapse#profile-lucy-ann
+                    p.profile-content I’m a Nutritionist first and foremost, as well as Consultant to the catering and food industry and corporates, a writer and practicing Sports Nutritionist, based in Sussex. I’ve trained all my life and have competed in running, triathlon, and competitive swimming. Now I swim pretty much daily and get out hiking across the South Downs.
+                .col-xs-2
+                  a(class="pull-right collapse-btn" data-toggle="collapse" href="#profile-lucy-ann" aria-expanded="false" aria-controls="profile-lucy-ann")
+                    img.img-responsive.post-image.pull-right(src="#{asset_path}/home/assets/white-circle-plus.svg",width="56", height="56")
+                    
+        .card-block.amp-highlight-box
+          .row
+            .col-sm-12.col-md-4
+              img.img-responsive.post-image.pull-left(src="#{asset_path}/home/assets/vision/tristan.png",width="106", height="106")
+              .profile-info
+                h2.pull-left Tristan Thrower
+                p.job-title Job title
+            .col-sm-12.col-md-8
+              .row
+                .col-xs-10
+                  .collapse#profile-tristan
+                    .profile-content
+                      p.q Q. What do you do?
+                      p A. Personal Trainer.
+                      p.q Q. How long have you been working in fitness?
+                      p A. Over 10 years. 
+                      p.q Q. What do you like most about what you do? 
+                      p A. Seeing people reach their goals and feeling good about themselves.
+                      p.q Q. What’s a typical day?
+                      p “It's not nine to five! I train people before or after a working day –and in the middle. And I’m often in the gym working out myself!”
+                      p.q Q. I didn’t get to where I am today without…
+                      p “Training hard and researching well and being particular about dietary intake.”
+                      p.q Q. Impressive stuff on your CV...?
+                      p A. I have a BSc (hons) in Sports Science (Exercise & Health Management) from the University of Surrey and I’m a REPS Level 3 PT. I studied the following: Sports Coaching Principles; Gym Instruction & Supervision; Lifestyle & Health; Diet & Nutrition; Personal Development; and Exercise & Health Psychology. I’ve worked and trained in a variety of gyms, including Gold's Gyms in Venice Beach, California and Las Vegas, Nevada (both meccas for bodybuilders). Prior to the 2012 London Olympics I was working at the University of Surrey Sports Park.
+
+                .col-xs-2
+                  a(class="pull-right collapse-btn" data-toggle="collapse" href="#profile-tristan" aria-expanded="false" aria-controls="profile-tristan")
+                    img.img-responsive.post-image.pull-right(src="#{asset_path}/home/assets/white-circle-plus.svg",width="56", height="56")
+          
+          
+            
+            
+  // LIVE RELOAD
+  // REMOVE ON LAUNCH
+  script(src="http://localhost:35729/livereload.js")

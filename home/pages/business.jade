@@ -1,0 +1,123 @@
+extends ../template.jade
+
+block content
+  section.amp-section.amp-business-header
+    .container-fluid
+      .container
+        .row.row-xs-center.text-center
+          .col-xs-12.col-md-8.col-md-offset-4.page-title
+            h1 Amplify
+              br
+              | understands
+              br
+              span.highlight corporate wellness
+          
+          .col-xs-12
+            .heading-text
+              h2 Most businesses fully understand the importance of 
+                span.highlight wellness
+                | , 
+                span.highlight health 
+                | and 
+                span.highlight social responsibility.
+              .row
+                .col-xs-12.col-md-8.col-md-offset-2.seperator
+
+              h2.emphasised Amplify brings your 
+                span.highlight company’s plans to life
+    
+  section.amp-section.amp-benefits.dark-theme
+    .container-fluid
+      .container
+        .row.benefits-container
+          .col-xs-12
+            
+            .row.row-xs-center.icon-left
+              .col-xs-12.col-md-6.col-sm-order-1.icon
+                .benefits-icon
+                  img.img-responsive.center-block(src="#{asset_path}/home/assets/business/real-time-data.png",width="232", height="232", alt="Real time data")
+              .col-xs-12.col-md-6.col-sm-order-2.text
+                .row.benefits-info
+                  .benefits-number 1.
+                  .benefits-text
+                    h2 Real Time Data
+                    p With the Amplify for Business portal, businesses can login and gain real time aggregated and anonymous data of their employee’s health, fitness and lifestyle.
+            
+            .row.row-xs-center.icon-right
+              .col-xs-12.col-md-6.col-sm-order-2.text
+                .row.benefits-info
+                  .benefits-number 2.
+                  .benefits-text
+                    h2 Competition
+                    p Corporates can run internal competitions or goals between divisions, regions or countries.
+              .col-xs-12.col-md-6.col-sm-order-1.icon
+                .benefits-icon
+                  img.img-responsive.center-block(src="#{asset_path}/home/assets/business/competition.png",width="188", height="220" alt="Competition")
+            
+            .row.row-xs-center.icon-left
+              .col-xs-12.col-md-6.col-sm-order-1.icon
+                .benefits-icon
+                  img.img-responsive.center-block(src="#{asset_path}/home/assets/business/insurance-credits.png",width="267", height="254", alt="Insurance credits")
+              .col-xs-12.col-md-6.col-sm-order-2.text
+                .row.benefits-info
+                  .benefits-number 3.
+                  .benefits-text
+                    h2 Insurance Credits
+                    p There are health and insurance credits to be obtained when certain criteria are met. 
+                
+            .row.row-xs-center.icon-right
+              .col-xs-12.col-md-6.col-sm-order-2.text
+                .row.benefits-info
+                  .benefits-number 4.
+                  .benefits-text
+                    h2 Tailored Reports
+                    p A full reporting engine generates reports and data sets to support particular wellness incentives and help your business best assess the effectiveness of its wellness programme. For example, gym memberships: how many people use it, how many times a week or month do they use it, how long per session, what exercises are most popular, which regions prefer running versus cycling?
+              .col-xs-12.col-md-6.col-sm-order-1.icon
+                .benefits-icon
+                  img.img-responsive.center-block(src="#{asset_path}/home/assets/business/reports.png",width="188", height="220" alt="Tailored Reports")
+                
+  section.amp-section.amp-for-business
+    .container-fluid
+      .container
+        .row.dark-theme
+          .col-xs-12.col-md-6.col-md-offset-6
+            h1 Amplify
+              br
+              span.highlight for business
+            p.emphasised With some simple tools you can quickly get online with Amplify for business
+    
+        .row.business-info.text-left.row-xs-center
+          .col-xs-12.col-md-6.col-md-offset-6
+            h2 Integration to Corporates Wellness platform
+            p Within the Amplify platform are integrated wellness packages and sites. A simple link to the company’s page, or a deeper integration using our API tool will open your company to the Amplify platform. How your business integrates our packages is dependent on what the needs of your company are, what you want to present and the components you need viewing and editing. A quick call or attendance at a workshop is typically required to agree the best method and approach for you and your team.
+            h2 Business packages
+            p At Amplify we like to keep things simple. Here are the key stages to getting online with Amplify for business.
+            
+          .col-sm-12.col-md-11.col-md-offset-2
+            .business-btns
+              a(href="#")
+                span Your marketing page
+              a(href="#")
+                span Your business dashboard
+              a(href="#")
+                span track and view progress
+              a(href="#")
+                span bespoke services or contribute annually
+              a(href="#")
+                span administration
+              a(href="#")
+                span happy wellness
+              
+  section.amp-section.amp-invites.dark-theme
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12.col-md-10.col-md-offset-1.col-lg-6.col-lg-offset-3
+          p.emphasised Invites are either sent out to staff or linked to your existing wellness page or site. Employees can also 
+            span.highlight search for your company 
+            | and requested to be added. Marketing pages can just be followed like Facebook.
+          button.btn.btn-gold.btn-lg Get in touch corporate
+              
+        
+  // LIVE RELOAD
+  // REMOVE ON LAUNCH
+  script(src="http://localhost:35729/livereload.js")

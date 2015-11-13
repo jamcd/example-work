@@ -1,0 +1,150 @@
+extends ../template.jade
+
+mixin login-card
+  .card.text-center.amp-login-card
+    .card-block
+      .form-group.fb-signup-group
+        button.btn.btn-fb.btn-block(onclick="window.fbLogin()")
+          i.flaticon.flaticon-facebook29
+          | Sign up with Facebook
+      p or sign up with your email
+      form(action='/api/portal/signup_noname',method='post')
+        fieldset.form-group
+          input.form-control(type="email", id="email", name="email", placeholder="Email")
+        fieldset.form-group
+          input.form-control(type="password", id="password", name="password", placeholder="Password")
+        .form-group
+          button(type="submit").btn.btn-gold.btn-block Sign Up
+        p.text-left.small-print
+          | By signing up for Amplify you agree to the 
+          a(href="") Terms of Service 
+          | and 
+          a(href="") Privacy Policy
+
+block content
+  section.amp-hero
+    .fluid-container
+      .row.row-xs-center.amp-hero-content
+        .col-sm-12.col-md-6.col-sm-bottom
+          h1
+            | Discover the <br/>
+            | best of you
+          h2 Data Driven Nutritional Advice
+        .col-sm-12.col-md-6.hidden-sm-down
+          +login-card
+  section.amp-section.amp-signup.hidden-md-up
+    .container
+      .row.row-xs-center
+        +login-card
+  section.amp-section.amp-how
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          h1 How it works
+      .row.row-xs-center.text-center
+        .col-xs-12.col-md-4.col-sm-order-1
+          h3.heading-margin
+            | Track <br/>
+            | your activity
+        .col-xs-12.col-md-4.col-sm-order-3
+          h3.heading-margin
+            | We analyse and <br/>
+            | recommend your optimal <br/>
+            | nutritional needs
+        .col-xs-12.col-md-4.col-sm-order-5
+          h3.heading-margin
+            | Finally it's delivered <br/>
+            | straight to your door
+        .col-xs-12.col-md-4.col-sm-order-2
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/tracking.png",width="345")
+        .col-xs-12.col-md-4.col-sm-order-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/stats.png",width="345")
+        .col-xs-12.col-md-4.col-sm-order-6
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/product.png",width="345")
+  section.amp-section.amp-training
+    .fluid-container
+      .row.row-xs-center
+        .col-xs-12.text-center
+          .amp-training-content
+            h2 Find out more
+            a.btn.btn-round.btn-lg(href="")
+              .btn-round-circle.btn-round-circle-gold
+                i.fa.fa-play(style="font-size:2em")
+          
+  section.amp-section.amp-talking
+    .container
+      .row.row-xs-center.text-center
+        .col-xs-12
+          h1.heading-margin Who's talking about Amplify
+      .row.row-xs-center.text-center
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev1.png")
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev2.png")
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev3.png")
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev4.png")
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev5.png")
+        .col-xs-6.col-md-4
+          img.img-responsive.center-block(src="#{asset_path}/home/assets/rev6.png")
+  section.amp-section.amp-quote
+    .container
+      .row.row-xs-center
+        .col-xs-12.col-sm-4.text-center.quote-image
+          img.img-circle.img-responsive.center-block(src="#{asset_path}/home/assets/usain.png")
+        .col-xs-12.col-sm-6
+          blockquote
+            h1 Athletes eat and train, they don't diet and exercise.
+            footer
+              p.name Usain Bolt
+              p.title Olympic Champion
+  section.amp-section.amp-pair
+    .container
+      .row
+        .col-xs-12.text-center
+          .amp-pair-content.center-block
+            h1 A year from now you'll wish you had started today.
+            a(href="/signup").btn.btn-lg.btn-block.center-block.btn-gold Sign up
+  
+block footerblock
+  .fluid-container
+    .row
+      .col-xs-11.col-md-6
+        .row
+          .col-xs-12
+            .logo-white(style="opacity:0.7")
+          .col-xs-12
+            .amp-footer-social
+                a.btn.btn-round(href="")
+                  .btn-round-circle.btn-social-fb
+                    i.flaticon.flaticon-facebook31
+                  span Facebook
+                a.btn.btn-round(href="")
+                  .btn-round-circle.btn-social-tw
+                    i.flaticon.flaticon-twitter21
+                  span Twitter
+                a.btn.btn-round(href="")
+                  .btn-round-circle.btn-social-yt
+                    i.flaticon.flaticon-youtube17
+                  span Youtube
+                a.btn.btn-round(href="")
+                  .btn-round-circle.btn-social-go
+                    i.flaticon.flaticon-google29
+                  span Google +
+                a.btn.btn-round(href="")
+                  .btn-round-circle.btn-social-li
+                    i.flaticon.flaticon-linkedin11
+                  span Linkedin
+      .col-xs-11.col-md-5.col-sm-order-3
+        .amp-biz-info
+          h4 Amplify for business
+          p Find out how Amplify can help your business be healthier, more productive and more successful with our bespoke recommendations for your employees health and well being. 
+          a.btn.btn-dark.btn-sm More
+      .col-xs-1.col-md-1.col-sm-order-2.text-center
+        a.btn.btn-round.btn-nav-up(href="#top")
+          .btn-round-circle
+            i.fa.fa-chevron-up
+    .row
+      .divider

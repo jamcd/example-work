@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="143"
+   height="143"
+   viewBox="0 0 143 143"
+   id="svg2"
+   xml:space="preserve"><metadata
+   id="metadata20"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata>
+<defs
+   id="defs4"><linearGradient
+     id="linearGradient3784"><stop
+       id="stop3786"
+       style="stop-color:#a78e5e;stop-opacity:1"
+       offset="0" /><stop
+       id="stop3794"
+       style="stop-color:#c5b87b;stop-opacity:1"
+       offset="1" /></linearGradient><linearGradient
+     x1="0"
+     y1="0"
+     x2="0"
+     y2="143"
+     id="linearGradient3792"
+     xlink:href="#linearGradient3784"
+     gradientUnits="userSpaceOnUse" /></defs>
+
+<g
+   id="g8"
+   style="fill:url(#linearGradient3792);fill-opacity:1;fill-rule:nonzero">
+	<defs
+   id="defs10"><rect
+     width="143.16"
+     height="143.16"
+     x="0"
+     y="0"
+     id="SVGID_1_"
+     style="fill:url(#linearGradient3792);fill-opacity:1" /></defs>
+	<clipPath
+   id="SVGID_2_">
+		<use
+   id="use14"
+   style="fill:url(#linearGradient3792);fill-opacity:1;overflow:visible"
+   x="0"
+   y="0"
+   width="143"
+   height="143"
+   xlink:href="#SVGID_1_" />
+	</clipPath>
+	<path
+   d="M 120.339,19.183 59.704,122.729 H 45.696 L 31.689,29.619 h 13.715 l 3.271,24.982 H 84.418 L 109.756,11.025 C 98.706,4.044 85.616,0.001 71.58,0.001 32.047,0.001 0,32.048 0,71.581 c 0,39.532 32.047,71.579 71.58,71.579 39.532,0 71.579,-32.047 71.579,-71.579 0,-20.692 -8.783,-39.33 -22.82,-52.398 m -42.735,47.507 -26.803,0 4.93,38.339 z"
+   id="path16"
+   style="fill:url(#linearGradient3792);fill-opacity:1;fill-rule:nonzero" />
+</g>
+</svg>
