@@ -1,0 +1,108 @@
+
+
+/*
+==========================
+FOOTER
+==========================
+*/
+
+.footer-stunning-container {
+  padding: 120px 30px 80px;
+  background: url('/wp-content/uploads/2015/08/footer-brock-taylor-office.jpg');
+}
+
+.copyright-area,
+.footer-stunning-container {
+  width: 100%;
+}
+
+.footer-stunning-container {
+  margin: -30px 0 0 -30px;
+}
+
+.copyright-area {
+  padding: 22px 30px 18px;
+  margin-left:-30px;
+  background:$primary-color;
+  color:white;
+  font-size: 14px;
+}
+
+.copyright-area a {
+  text-decoration:none;
+}
+
+.copyright-area span {
+  margin-right:20px;
+}
+
+.footer-stunning-content p,
+.template-full-header h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: 900;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.footer-stunning-content p {
+  margin-bottom: 45px;
+}
+
+.template-full-header {
+  background-position: 50% 50%;
+}
+
+.template-full-header h1 {
+  line-height: 1em;
+  padding: 15px 0 30px;
+}
+
+.layout-full #colophon {
+  background: white;
+  padding-bottom:0;
+}
+
+#footer-widgets {
+  padding: 50px 15px;
+}
+
+#footer-widgets .widget .widget-title {
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+#footer-widgets .widget { font-size:16px; }
+
+#footer-widgets .widget,
+#footer-widgets .widget .widget-title {
+  color:$primary-color;
+  line-height: 1.5em;
+}
+
+.social-media-links {
+  font-size: 20px;
+}
+
+#footer-widgets .social-media-links i {
+  float:left;
+}
+
+#footer-widgets .social-media-links a {
+  color:$primary-color;
+  padding: 0 27px;
+  border-right:2px solid $secondary-color;
+  float:left;
+}
+
+#footer-widgets .social-media-links a:hover { color:$secondary-color; }
+
+#footer-widgets .social-media-links a:last-of-type {
+  border:0;
+  padding-right:0;
+}
+
+#footer-widgets .social-media-links a:first-of-type {
+  padding-left:0;
+}

@@ -1,0 +1,54 @@
+
+
+/*
+==========================
+WOLF TWITTER
+==========================
+*/
+
+.wolf-bigtweet-content {
+  max-width:100%;
+  padding: 20px 0;
+}
+
+.wolf-tweet-text,
+.wolf-tweet-time_big {
+  padding-left:150px;
+  display: block;
+}
+
+.wolf-bigtweet-content:before {
+  float: left;
+  margin-top: 20px;
+  font-family: FontAwesome;
+  font-size: 130px;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f099";
+}
+
+.wolf-bigtweet-content span.wolf-tweet-text {
+  @extend %lato;
+  font-size:25px;
+  line-height: 1.3;
+}
+
+.wolf-bigtweet-content br {
+  display: none;
+}
+
+.wolf-tweet-time_big {
+  margin-top:12px;
+}
+
+.wolf-tweet-text {
+  text-shadow: 0 0 0 $primary-color;
+}
+
+.wolf-bigtweet-content a {
+  color: $secondary-color;
+  text-decoration:none;
+  text-shadow: 0 0 0 $secondary-color;
+}

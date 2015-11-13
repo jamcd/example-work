@@ -1,0 +1,148 @@
+
+
+/*
+  =============================
+  GRAVITY FORMS
+  =============================
+*/
+
+.gform_wrapper .gform_fields li.gfield.gfield_error {
+    background: none;
+    border:0;
+}
+
+.gform_wrapper .gform_fields li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+.gform_wrapper .gform_fields li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+    margin-top: .275em;
+}
+
+.gform_wrapper .gform_fields li.gfield.gfield_error.gfield_contains_required {
+    margin-top: 0;
+}
+
+.gform_wrapper .gform_fields li.gfield.gfield_error input,
+.gform_wrapper .gform_fields li.gfield.gfield_error textarea {
+    background:#FFC4C4;
+}
+
+.gform_wrapper #gform_1 div.validation_error,
+.gform_wrapper #gform_3 div.validation_error,
+.gform_wrapper #gform_1 div.validation_message,
+.gform_wrapper #gform_3 div.validation_message {
+    color: #FFA4A4;
+    line-height:1.2;
+}
+
+.gform_wrapper .gform_fields li.gfield.gfield_error input::-webkit-input-placeholder,
+.gform_wrapper .gform_fields li.gfield.gfield_error textarea::-webkit-input-placeholder,
+.gform_wrapper .gform_fields li.gfield.gfield_error input:-moz-placeholder,
+.gform_wrapper .gform_fields li.gfield.gfield_error textarea:-moz-placeholder,
+.gform_wrapper .gform_fields li.gfield.gfield_error textarea:-ms-input-placeholder,
+.gform_wrapper .gform_fields li.gfield.gfield_error textarea:-ms-input-placeholder {
+   color: #E54A4A;
+}
+
+
+#gform_1 li:nth-of-type(1),
+#gform_1 li:nth-of-type(2),
+#gform_1 li:nth-of-type(3),
+#gform_1 li:nth-of-type(4),
+#gform_3 li:nth-of-type(1),
+#gform_3 li:nth-of-type(2),
+#gform_3 li:nth-of-type(3),
+#gform_3 li:nth-of-type(4) {
+  float:left;
+  width:48.5%;
+  clear: none;
+  padding-right: 3%;
+}
+
+#gform_1 li,
+#gform_3 li {
+    margin-bottom:10px;
+}
+
+// #gform_1 #field_1_3,
+// #gform_1 #field_1_5,
+#gform_1 li:nth-of-type(2),
+#gform_1 li:nth-of-type(4),
+#gform_3 li:nth-of-type(2),
+#gform_3 li:nth-of-type(4)
+// #gform_3 li:nth-of-type(3),
+// #gform_3 li:nth-of-type(5)
+{
+  padding-right:0;
+}
+
+#gform_1 .gform_body input,
+#gform_2 .gform_body input,
+#gform_3 .gform_body input,
+#gform_1 textarea,
+#gform_2 textarea,
+#gform_3 textarea,
+#gform_1 select {
+  width:100%;
+  font-size: 14px;
+  padding: 10px;
+  border:0;
+}
+
+#gform_1 #field_1_1 span,
+#gform_2 #field_2_1 span,
+#gform_3 #field_3_1 span {
+  margin:0;
+}
+
+// #gform_3 #field_3_1 span:first-of-type { padding-right:2.3%; }
+
+
+#gform_1 li > label,
+#gform_2 li > label,
+#gform_3 li > label {
+  font-size:14px;
+  margin: 17px 0 0;
+  display: none;
+}
+
+#gform_1 span > label,
+#gform_2 span > label,
+#gform_3 span > label {
+  font-size: 13px;
+}
+
+input#gform_submit_button_1,
+input#gform_submit_button_2,
+input#gform_submit_button_3 {
+    padding: 13px 16px;
+    float: right;
+    background: $blue;
+    // @include box-shadow(none);
+    @extend %uppercase;
+    border: 0;
+    text-shadow: none;
+    color: white;
+    text-align: left;
+    width: 240px;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: $lato;
+}
+
+.gform_wrapper form .gform_footer {
+  margin-top:0;
+  overflow: hidden;
+}
+
+#gform_1 textarea,
+#gform_3 textarea {
+    margin-top:6px;
+    padding:10px 13px;
+    height: 79px!important;
+    resize: vertical;
+}
+
+#colophon .textwidget,
+#colophon .textwidget a {
+    line-height: 2;
+    color:white;
+}

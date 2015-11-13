@@ -1,0 +1,92 @@
+/*
+==========================
+GENERAL STYLES
+==========================
+*/
+
+body {
+  font-family: $lato;
+  font-size:15px;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  line-height:1.3;
+  margin: 0 0 0.5em;
+}
+
+.entry-content a {
+  text-decoration:none;
+}
+
+.entry-content a:hover {
+  color:$blue;
+}
+
+.cf:after {
+  display:table;
+  content:'';
+  width:100%;
+}
+
+.page-template-template-home #primary {
+  width: auto;
+  float: none;
+}
+
+#main.bw-full {
+  padding: 0;
+}
+
+.entry-content h2 {
+  font-size: 41px;
+  font-weight: 700;
+}
+
+.size-emphasised {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+body.responsive.layout-full #page-wrapper .full-container.alt-layout {
+  max-width:1100px;
+}
+
+.v-align-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align:middle;
+}
+
+
+/*
+==========================
+CONTACT FORM / SIDEBAR
+==========================
+*/
+
+#main #secondary {
+  .widget-title {
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+  }
+  .gform_body .gfield {
+    width: 100%;
+  }
+  input[type=submit] {
+    background: $green;
+  }
+}
+
+.highlight-box,
+.page-template-default #secondary {
+  text-align: center;
+  padding: 50px 40px 40px;
+  @include box-sizing(border-box);
+  @include border-radius(7px);
+  @extend %uppercase;
+  color:white;
+  background:$blue url("/wp-content/uploads/dev-images/cctv-background-image.png") 100% 100% / cover;
+  font-weight:900;
+  line-height:1;
+}

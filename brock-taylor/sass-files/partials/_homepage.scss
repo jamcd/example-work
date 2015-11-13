@@ -1,0 +1,138 @@
+
+
+/*
+==========================
+HOMEPAGE CONTENT
+==========================
+*/
+
+#quick-search-section,
+#homepage-section-2 {
+  background-color: $light-shade-color;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+#quick-search-section {
+  padding-bottom:20px;
+}
+
+#homepage-section-2 {
+  padding-top: 60px;
+}
+
+#quick-search-section {
+  margin-top: -55px;
+  margin-bottom: 70px;
+  @include transition(margin 0.2s ease);
+}
+
+.home-content-container {
+  max-width:800px;
+}
+
+#quick-search-section .search-headline {
+  margin-bottom:30px;
+  margin-top:0px;
+  float:left;
+  width:70%;
+}
+
+#quick-search-section .subtitle {
+  display:block;
+  float:left;
+  font-size:20px;
+  margin-top:3px;
+}
+
+#quick-search-section .search-title {
+  display:block;
+  float:left;
+  margin-right:20px;
+}
+
+#quick-search-section .search-button {
+  float:right;
+  width:30%;
+}
+
+.quick-search-button {
+  font-size:20px;
+  padding:9px 18px;
+  float:right;
+  margin-top: 2px;
+  @include transition("transform 0.2s ease, opacity 0.2s ease");
+  @include transform(rotateX(90deg));
+  position:absolute;
+  top:5px;
+  right:0;
+  /*display:none;*/
+  opacity:0;
+}
+
+.quick-search-button.visible {
+  display:block!important;
+  opacity:1;
+  z-index:99;
+  @include transform(rotateX(0deg));
+}
+
+
+
+/* ===== HOMEPAGE HERO CONTENT ====== */
+
+.home-hero-content {
+  max-width: 805px;
+  padding:0 15px;
+  @include box-sizing(border-box);
+  color:white;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.home-hero-content p {
+  line-height:1em;
+  margin-bottom: 0;
+  font-size: 37px;
+  text-align:center;
+}
+
+.home-hero-container {
+  padding: 130px 0 30px;
+}
+
+.template-full-header,
+.home-hero-container {
+  padding: 130px 0 30px;
+  margin-top: -105px;
+  background-image:url('/wp-content/uploads/2015/08/home-hero-image.jpg');
+}
+
+// {
+//   text-align: center;
+//   color: white;
+//   font-weight: 700;
+//   font-size: 37px;
+//   text-transform: uppercase;
+// }
+
+.home-hero-content .home-hero-impact-text {
+  font-size: 325px;
+  font-weight: 900;
+  line-height: 0.83em;
+  margin-bottom: 12px;
+  text-shadow: 0 0 90px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero-impact-text span {
+  font-size: 100px;
+  vertical-align: top;
+  line-height: 124px;
+  text-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero-link a {
+  margin: 45px auto 25px;
+}

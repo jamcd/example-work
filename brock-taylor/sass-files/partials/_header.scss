@@ -1,0 +1,186 @@
+
+
+/*
+==========================
+HEADER
+==========================
+*/
+
+
+.main-navigation ul li a,
+.header-signin a,
+.header-bookings {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main-navigation ul li a {
+  padding: 5px 15px;
+}
+
+.header-signin a {
+  padding:13px 15px;
+}
+
+.header-phone { padding:13px 15px; }
+
+#masthead {
+  padding:0;
+  display: table;
+  width: 100%;
+}
+
+#masthead:before {
+  content:none;
+}
+
+.header-menu {
+  float: left;
+}
+
+#masthead,
+.main-navigation {
+  background:none;
+}
+
+.main-navigation {
+  margin:0;
+  padding: 0;
+  @include box-sizing(border-box);
+  display: table-cell;
+  vertical-align: top;
+  font-size: 20px;
+  width:100%;
+  /* background: rgba(0,38,76,0.75); */
+}
+
+#page-wrapper #masthead .full-container {
+  max-width:none;
+}
+
+.nav-container {
+  /* display: table-cell; */
+  width: 100%;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  float: left;
+}
+
+.nav-underlying-container {
+  background:rgba(255,255,255,0.75);
+  /* overflow: hidden; */
+  /* display: table-cell; */
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.header-signin {
+  float:right;
+  padding-right: 10px;
+}
+
+.header-signin a {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.header-logo {
+  float:right;
+  position:relative;
+  margin-left: -1px;
+}
+
+.header-logo,
+.main-navigation {
+  z-index:99;
+}
+
+.header-phone {
+  float:left;
+}
+
+.header-bookings {
+  float:right;
+}
+
+.header-phone strong {
+  font-weight:900;
+}
+
+.header-phone {
+  font-size:16px;
+  color:$primary-color;
+}
+
+.header-bookings,
+.header-phone {
+  line-height:1em;
+}
+
+.header-bookings a {
+  font-size:14px;
+  background-color:$secondary-color;
+  padding: 14px 25px;
+}
+
+.main-navigation a {
+  color:white;
+}
+
+.main-navigation ul li:hover > a,
+.header-signin a:hover {
+  background:none;
+  color: $secondary-color;
+}
+
+.header-signin.responsive {
+  display:none;
+}
+
+.header-signin.responsive a {
+  color:$primary-color;
+  padding: 14px 15px;
+}
+
+.main-navigation ul { padding: 4px 0 10px; }
+
+#menu-main-menu ul.sub-menu {
+  margin-top: 0px;
+  padding: 10px 0;
+  background: none;
+}
+
+#menu-main-menu ul.sub-menu li a {
+  line-height: 1.4em;
+  width: 250px;
+  padding: 11px 15px;
+}
+
+#menu-main-menu ul.sub-menu li {
+  background: $secondary-color;
+  border-bottom: 1px solid #159749;
+}
+
+#menu-main-menu ul.sub-menu li:hover {
+  background: #149D4C;
+}
+
+#menu-main-menu ul.sub-menu li:hover a,
+#menu-main-menu ul.sub-menu li a:hover {
+  background:none;
+}
+
+.mobile-nav-frame .next {
+  position: relative;
+  top: 10px;
+}
+
+
+
+/*.main-navigation
+.nav-container,
+.nav-underlying-container  {
+float:left;
+}*/

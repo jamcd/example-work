@@ -1,0 +1,69 @@
+#pokemon-game-container {
+    background:#F2F2F2;
+    border:1px solid #A4A4A4;
+    width:450px;
+    height:350px;
+    padding:20px;
+    /* overflow:hidden; */
+}
+body {
+    font-family:Tahoma, Geneva, sans-serif;
+}
+#starting-pokemon-select, .input-error, #set-name {
+    display:none;
+}
+/* #set-name { display:none!important; } */
+
+/* #starting-pokemon-select { display:block!important; } */
+ #submit-name, .pokemon-select-option {
+    cursor:pointer;
+}
+.pokemon-select-option {
+    display: inline-block;
+    width: 32.5%;
+    border: 1px solid #A4A4A4;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+/* .pokemon-select-option img { display:none; } */
+
+#user-name, #submit-name {
+    margin:10px auto 20px;
+    display: block;
+    padding:3px 10px;
+}
+h2, #user-name, #submit-name, .pokemon-select-option, .input-error {
+    text-align:center;
+}
+.pokemon-select-option img {
+    max-width: 80%;
+    height: auto;
+}
+.pokemon-select-option span {
+    display:block;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+#pokemon-game-container, .pokemon-select-option {
+    box-sizing:border-box;
+}
+#select-charmander {
+    background-color: #FBF1E4;
+}
+#select-squirtle {
+    background-color: #DEEFF3;
+}
+#select-bulbasaur {
+    background-color: #E6F9F2;
+}
+.input-error {
+    color:red;
+    font-size:12px;
+}
+.pokemon-select-option:hover {
+    border:1px solid black;
+}
+#pokemon-game-container .is-visible {
+    display:block;
+}

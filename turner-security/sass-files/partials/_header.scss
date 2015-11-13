@@ -1,0 +1,140 @@
+
+/*
+==========================
+HEADER
+=============================
+*/
+
+.bw-top-bar {
+  background:$blue;
+  padding: 7px 0 12px;
+  color:white;
+  text-align: center;
+  font-family: $lato;
+  font-size:14px;
+  font-weight:300;
+
+  strong {
+    font-weight: 700;
+    margin: 0 10px;
+  }
+}
+
+#page-wrapper #masthead {
+
+  .logo-wrapper {
+
+    img {
+      max-height: 55px;
+      width: auto;
+    }
+  }
+
+  .hgroup {
+    padding:0;
+    max-width: 860px;
+  }
+}
+
+#sticky-container .full-container { max-width: 860px; }
+
+.logo-wrapper {
+  float:left;
+  margin-top: 18px;
+}
+
+.main-navigation {
+  background:none;
+  float:right;
+  margin:0;
+
+  .menu-home a:before { background:url('/wp-content/uploads/dev-images/home-icon.png'); }
+  .menu-about-us a:before { background:url('/wp-content/uploads/dev-images/about-us-icon.png'); }
+  .menu-what-we-do a:before { background:url('/wp-content/uploads/dev-images/what-we-do-icon.png'); }
+  .menu-our-clients a:before { background:url('/wp-content/uploads/dev-images/our-clients-icon.png'); }
+  .menu-contact a:before { background:url('/wp-content/uploads/dev-images/contact-icon.png'); }
+
+  .menu-item {
+
+    a {
+      padding: 21px 30px 20px;
+      @extend %uppercase;
+      color: #2f2f2f;
+      font-weight:900;
+
+    }
+
+    &:hover {
+      &.menu-home a:before { background:url('/wp-content/uploads/dev-images/home-icon-light.png'); }
+      &.menu-about-us a:before { background:url('/wp-content/uploads/dev-images/about-us-icon-light.png'); }
+      &.menu-what-we-do a:before { background:url('/wp-content/uploads/dev-images/what-we-do-icon-light.png'); }
+      &.menu-our-clients a:before { background:url('/wp-content/uploads/dev-images/our-clients-icon-light.png'); }
+      &.menu-contact a:before { background:url('/wp-content/uploads/dev-images/contact-icon-light.png'); }
+      > a {
+        background: #1EC388;
+        color: white;
+      }
+    }
+  }
+
+  #menu-menu-1 {
+
+    a:before {
+      display:block;
+      content:'';
+      width:100%;
+      height: 26px;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      margin-bottom: 10px;
+    }
+
+    li a, li a>* {
+      -webkit-transition: all 0.1s ease;
+      -moz-transition: all 0.1s ease;
+      -o-transition: all 0.1s ease;
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+
+
+#masthead {
+  padding:0 50px;
+}
+
+#sticky-container {
+
+  .main-navigation {
+    margin: 0;
+    width: 100%!important;
+    background: white;
+    padding: 0px 50px;
+    @include box-sizing(border-box);
+  }
+
+  ul {
+    text-align: right;
+  }
+
+  .logo-wrapper.sticky {
+    display:block;
+  }
+
+}
+
+.bw-top-bar.fixed {
+  position: fixed;
+  top:89px;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 3px solid #293B7C;
+  padding-top: 10px;
+}
+
+.admin-bar .bw-top-bar.fixed { top: 122px; }
+
+.logo-wrapper.sticky {
+  display:none;
+}

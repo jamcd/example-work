@@ -1,0 +1,86 @@
+
+
+// Variables
+$primary-color: #00264c;
+$secondary-color: #1fb25a;
+$secondary-alt-color: #149D4C;
+$light-shade-color: #e5e9ed;
+
+
+// Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform; /* Safari */
+  -moz-transform: $transform; /* Standard syntax */
+  -ms-transform: $transform; /* Standard syntax */
+  -o-transform: $transform; /* Standard syntax */
+  transform: $transform; /* Standard syntax */
+}
+
+
+// Placeholders
+
+/* ==========================
+  GROUPED STYLES
+  Sass placeholders
+  ============================= */
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%lato {
+  font-family: 'Lato', sans-serif;
+}
+
+%primary-btn {
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  background: $secondary-color;
+  @include box-shadow(0px 3.5px 0 rgba(0,0,0,0.2));
+}
+
+%primary-btn-active {
+  background: $secondary-alt-color;
+  color:white;
+}
+
+@mixin primary-button {
+    &:hover {
+        @extend %primary-btn-active;
+    }
+    &:focus {
+        @extend %primary-btn-active;
+    }
+    &:active {
+        @extend %primary-btn-active;
+    }
+}

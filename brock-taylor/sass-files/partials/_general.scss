@@ -1,0 +1,215 @@
+
+
+/*
+==========================
+GENERAL STYLES
+==========================
+*/
+
+body {
+  font-size:18px;
+}
+
+body, button, input, select, textarea {
+  @extend %lato;
+}
+
+.mobile-nav-frame ul li a.link,
+#quick-search-section button {
+  @extend %lato;
+}
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .wolf-tweet-text {
+  color:$primary-color;
+  margin: 1.3em 0 0.7em;
+}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  font-weight:700;
+  line-height: 1.3em;
+}
+.entry-content h2 {
+  font-size:33px;
+}
+.entry-content h3 {
+  font-size:28px;
+}
+.entry-content h4 {
+  font-size:23px;
+}
+
+.entry-content {
+  color:#333333;
+  line-height: 1.3em;
+}
+
+body.page-template-template-homepage #main { padding-bottom: 0; }
+
+.page-template-template-homepage #primary,
+.page-template-template-full #primary {
+  width: auto;
+  float: none;
+}
+
+#main { padding-bottom: 75px; }
+
+.entry-content a,
+#main .highlight,
+#footer-widgets .widget a
+{ color:$secondary-color; }
+
+.entry-content a:hover,
+#footer-widgets .widget a:hover { color:#06682E; }
+
+ul.check-list {
+  list-style: none;
+}
+
+ul.check-list li {
+  margin-left: 15px;
+  line-height: 1.5;
+}
+
+.check-list li:before {
+  content: "\f00c";
+  font-family:FontAwesome;
+  left: -15px;
+  position: relative;
+  color:$secondary-color;
+}
+
+.entry-content #gallery-1 .gallery-item {
+  padding: 1px;
+  border: 5px solid white;
+  margin-top: 0px;
+  @include box-sizing(border-box);
+}
+
+#swipebox-overlay {
+  background: rgba(0,0,0,0.85);
+}
+
+
+
+/*
+==========================
+GROUPED STYLES
+==========================
+*/
+
+.photo-grid-overlay:hover .photo-grid-content,
+.photo-grid-overlay:hover .photo-grid-link,
+.property-slide-overlay:hover div {
+  opacity:1;
+  top:-55px;
+}
+
+.properties-slider-item:hover {
+  background-size: auto 105%;
+}
+
+.photo-grid-overlay,
+.property-slide-overlay {
+  @include transition(background 0.2s linear);
+}
+
+.photo-grid-content,
+.entry-content .photo-grid-link,
+.property-slide-overlay div {
+  top:0;
+  @include transition(top 0.2s ease-in-out, opacity 0.2s ease-in-out);
+}
+
+.photo-grid-item,
+.properties-slider-item {
+  @include transition(background-size 0.2s linear);
+}
+
+.footer-stunning-link,
+.home-hero-link,
+.property-slider-link {
+  text-align:center;
+}
+
+.footer-stunning-link a,
+.home-hero-link a {
+  font-size:20px;
+  padding: 9px 18px;
+}
+
+.footer-stunning-link a,
+.home-hero-link a,
+.property-slider-link a {
+  display:inline-block;
+  width: auto;
+}
+
+.home-hero-container,
+.footer-stunning-container,
+.template-full-header {
+  background-position: 50% 0;
+  background-size: 100%;
+}
+
+
+
+/* GREEN BUTTONS */
+.property-slider-link a,
+#homepage-vis-editor a.wpv-filter-next-link.js-wpv-pagination-next-link,
+#homepage-vis-editor a.wpv-filter-previous-link.js-wpv-pagination-previous-link,
+.home-hero-link a,
+.footer-stunning-link a,
+#quick-search-section button,
+.make-offer-button,
+.arrange-viewing-button,
+#property-filter-submit,
+#quick-search-section .quick-search-button,
+.primary-btn {
+  @extend %primary-btn;
+  @include primary-button;
+}
+
+
+
+/* GREEN HOVER BUTTONS */
+.entry-content .photo-grid-link:hover,
+.property-slide-overlay .property-slider-link a:hover,
+// #homepage-vis-editor a.wpv-filter-next-link.js-wpv-pagination-next-link:hover,
+// #homepage-vis-editor a.wpv-filter-previous-link.js-wpv-pagination-previous-link:hover,
+.header-bookings a:hover,
+// .home-hero-link a:hover,
+// .footer-stunning-link a:hover,
+// #quick-search-section button:hover,
+// .make-offer-button:hover,
+// .arrange-viewing-button:hover,
+// #property-filter-submit:hover,
+// #quick-search-section .quick-search-button:hover,
+// .primary-btn:hover,
+// .primary-btn:active,
+// .primary-btn:focus
+{
+  @extend %primary-btn-active;
+}
+
+.property-slide-overlay:hover,
+.photo-grid-overlay:hover,
+.nav-container {
+  background:rgba(0,38,76,0.75); /* Dark Blue - Transparent */
+}
+
+
+
+/* ====== Online Chat ===== */
+
+div#fttbcont {
+  background: #8f298d;
+  border: 0;
+}
+
+.fttb.frescochat-tb {
+  border: 2px solid #954794;
+  @include border-radius(10px 10px 0 0);
+}
+
+div#ft_sp_text {
+  font-size: 15px!important;
+}

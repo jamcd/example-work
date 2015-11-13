@@ -1,0 +1,53 @@
+
+
+// Variables
+$blue: #32468E; // Blue
+$green: #1EC388; // Green
+$dark-grey: #666; // Content dark grey
+$blue-grey: #51575b; // Bluey grey
+$lato: 'Lato', sans-serif;
+
+
+// Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+// Placeholders
+
+/* ==========================
+  GROUPED STYLES
+  Sass placeholders
+  ============================= */
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%box-button {
+    display: inline-block;
+    text-align:center;
+    @include border-radius(5px);
+}

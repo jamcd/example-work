@@ -1,0 +1,41 @@
+/*
+  =========================================================
+  PAGE SPECIFIC STYLES
+  =========================================================
+*/
+
+.page-template-default {
+
+  #main {
+    padding-top: 60px;
+  }
+
+  #primary {
+    width: 70%;
+  }
+
+  #secondary {
+    width: 25%;
+  }
+
+  .bw-page-title-wrapper {
+    text-align: center;
+    background: url("/wp-content/uploads/2015/09/security-cameras.jpg") 50% 40%/cover;
+
+    .bw-page-title-container {
+      background: rgba(70,84,135,0.75);
+      padding: 50px;
+    }
+
+    h1 {
+      background: white;
+      display: inline-block;
+      padding: 20px 30px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 900;
+      @include border-radius(1px);
+    }
+  }
+
+}

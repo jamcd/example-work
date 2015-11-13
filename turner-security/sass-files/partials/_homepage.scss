@@ -1,0 +1,190 @@
+
+/* ==========================
+  PAGE: HOME
+  ============================= */
+
+.highlight-box {
+  width: 100%;
+
+  .highlight-box-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+
+  .highlight-box-content {
+    font-size: 1.48em;
+    margin-bottom: 30px;
+  }
+
+  .box-btn {
+    @extend %box-button;
+    padding: 20px 35px;
+    background:white;
+    color: #555555;
+    font-weight: 700;
+    @include box-shadow(0px 7px 5px -5px #253366);
+  }
+
+  .gform_wrapper {
+    overflow: inherit;
+    margin: 0 auto;
+    max-width: 354px;
+
+    input[type=submit] {
+      background: $green!important;
+    }
+  }
+
+}
+
+.checklist {
+  list-style:none!important;
+  margin-left: 0;
+
+  .checklist-item {
+    font-size: 1.6em;
+    line-height: 0.8;
+    padding: 20px 0 10px 65px;
+    margin:0;
+    color:white;
+    float: left;
+    width: 48.5%;
+    margin-right:3%;
+    @include box-sizing(border-box);
+
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+      display: inline-block;
+      padding: 10px;
+      margin-left:-45px;
+      background: $green;
+      position: relative;
+      left: -20px;
+      @include border-radius(50%);
+    }
+
+    &:nth-of-type(2n) {
+      margin-right:0;
+    }
+
+    &:nth-of-type(2n+1) {
+      clear:left;
+    }
+  }
+}
+
+.home-section-2 h2 {
+  text-align:center;
+}
+
+.service-box {
+  width:33.33%;
+  @include box-sizing(border-box);
+  padding: 0 20px;
+  text-align:center;
+  color: $blue-grey;
+  height: 308px;
+  position:relative;
+
+  .service-container {
+    position:relative;
+    height: 100%;
+  }
+
+  .service-icon {
+    background-color: $blue;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    @include border-radius(50%);
+    margin: 0 auto 20px;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  .service-title {
+    margin-bottom:10px;
+    font-size:20px;
+    @extend %uppercase;
+    font-weight:900;
+  }
+
+  .service-content {
+    margin-bottom:20px;
+  }
+
+  .service-link {
+    position:absolute;
+    width:100%;
+    bottom:0;
+
+    a {
+      @extend %box-button;
+      border: 1px solid #999CA5;
+      color: $blue-grey;
+      padding: 8px 24px;
+      margin:0 auto;
+      font-weight:600;
+    }
+  }
+}
+
+.primary-section.home-section-4 {
+  background: $blue url('/wp-content/uploads/dev-images/testimonials-background.png') 100% 100% / cover;
+  text-align:center;
+}
+
+
+.testimonial-slide {
+  color: white;
+
+  .testimonial-content {
+    font-size:20px;
+    font-style: italic;
+    font-weight: 200;
+    line-height:1.6;
+    margin-bottom:40px;
+  }
+
+  .testimonial-author {
+    font-size:22px;
+  }
+}
+
+
+
+
+/* OUR CLIENTS */
+
+.primary-section.home-section-5 {
+    background-color: #E2E3E7;
+    padding: 50px 30px 60px;
+    text-align: center;
+
+    h2 {
+        margin-bottom:30px;
+        font-weight:400;
+    }
+}
+
+#our-clients-slider {
+
+    .client-logo {
+        height: 140px;
+        text-align: center;
+        background-color: white;
+        margin: 0 15px;
+        @include border-radius(1px);
+
+        img {
+            max-height:100%;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px 25px;
+            @include box-sizing(border-box);
+        }
+    }
+}
